@@ -1,0 +1,44 @@
+<div>
+    <h3 class="display-3">Register</h3>
+    <h5 class="display-5">Enter access data</h5><br><hr>
+    <figure class="figure">
+        <!--<img src="<?=App::config('url')?>public/img/login.png" class="figure-img img-fluid rounded" alt="..." style="max-width:300px;">-->
+        
+        <form action="<?=App::config('url');?>login/authorization" method="post">
+
+            <div class="mb-3 row" style="max-width:400px; margin: auto;">
+                <label for="email" class="form-label">First name*</label>
+                <input type="text" class="form-control" placeholder="Name" name="name">
+            </div>
+
+            <div class="mb-3 row" style="max-width:400px; margin: auto;">
+                <label for="email" class="form-label">Last name*</label>
+                <input type="text" class="form-control" placeholder="Last name" name="lastname">
+            </div>
+
+            <div class="mb-3 row" style="max-width:400px; margin: auto;">
+                <label for="email" class="form-label">Your Email*</label>
+                <input type="text" class="form-control" placeholder="email" name="email" value="<?=$email?>">
+            </div> 
+
+            <div class="mb-3 row" style="max-width:400px; margin: auto;">
+                <label for="password" class="form-label">Your password*</label>
+                <input type="password" class="form-control" placeholder="password" name="password">
+            </div>
+            
+            <div class="mb-3 row" style="max-width:400px; margin: auto;">
+                <label for="password" class="form-label">Confirm password*</label>
+                <input type="password" class="form-control" placeholder="password" name="password">
+            </div>
+
+            <?=$message?><br>
+            <button type="submit" value="Login" class="btn btn-outline-success" >Register</button>
+            
+            
+            <a href="<?=App::config('url')?>index/login">
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Back
+            </button></a>
+        </form>
+    </figure>
+</div>

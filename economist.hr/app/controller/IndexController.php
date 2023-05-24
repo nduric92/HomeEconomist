@@ -22,6 +22,14 @@ class IndexController extends Controller
         $this->view->render('aboutapp');
     }
 
+    public function register()
+    {
+        $this->view->render('register',[
+            'message'=>'',
+            'email'=>''
+        ]);
+    }
+
     public function login()
     {
         $this->view->render('login',[

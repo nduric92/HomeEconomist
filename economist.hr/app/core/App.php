@@ -38,7 +38,7 @@ class App
             $v->render('notFoundController',[
                 'message'=>'Not exists ' . $controller . '-&gt;' . $method
             ]);
-            //echo 'Not exists ' . $controller . '-&gt;' . $method;
+            echo 'Not exists ' . $controller . '-&gt;' . $method;
             return;
         }
 
